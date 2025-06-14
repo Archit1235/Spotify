@@ -107,6 +107,7 @@ class SigninPage extends StatelessWidget {
   Widget _passwordField(BuildContext context) {
     return TextField(
       controller: _password,
+      obscureText: true,
       decoration: const InputDecoration(
         hintText: 'Password',
       ).applyDefaults(

@@ -34,6 +34,7 @@ class NewsSongs extends StatelessWidget {
 
   Widget _songs(List<SongEntity> songs) {
     return ListView.separated(
+      padding: const EdgeInsets.symmetric(horizontal: 16),
       scrollDirection: Axis.horizontal,
       itemBuilder: (context, index) {
         return GestureDetector(

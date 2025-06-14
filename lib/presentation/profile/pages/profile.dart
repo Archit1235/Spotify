@@ -19,6 +19,12 @@ class ProfilePage extends StatelessWidget {
       appBar: BasicAppbar(
         title: const Text('Profile'),
         background: context.isDarkMode ? const Color(0xff2C2B2B) : Colors.white,
+        action: IconButton(
+          icon: const Icon(Icons.logout),
+          onPressed: () {
+            Navigator.pushReplacementNamed(context, '/signin');
+          },
+        ),
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
